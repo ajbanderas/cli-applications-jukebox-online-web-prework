@@ -31,10 +31,10 @@ def exit_jukebox
 end
 
 def run(songs)
-  exit = false
+  exit_ = false
   puts "Please enter a command:"
   input = gets.strip
-  unless exit
+  unless exit_
     case input
     when "help"
       help
@@ -47,7 +47,10 @@ def run(songs)
       input = gets.input
     when "exit"
       exit_jukebox
+      exit_ = true
     else
+      puts "Invalid command. Try again or type help for a list of commands."
+      input = gets.strip
     end
   end
 end
