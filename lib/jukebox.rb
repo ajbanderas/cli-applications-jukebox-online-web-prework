@@ -12,7 +12,7 @@ def play(songs)
   input = gets.strip
   found = false
   songs.each_with_index do |element, index|
-    if input == element | input.to_i == (index + 1)
+    if input == element || input.to_i == (index + 1)
       puts "Playing #{element}"
       found = true
   end
