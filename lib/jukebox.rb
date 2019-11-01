@@ -15,6 +15,7 @@ def play(songs)
     if input == element || input.to_i == (index + 1)
       puts "Playing #{element}"
       found = true
+    end
   end
   if !found
     puts "Invalid input, please try again"
