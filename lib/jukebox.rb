@@ -31,11 +31,13 @@ def exit_jukebox
 end
 
 def run(songs)
- puts "Please enter a command:"
- input = gets.strip
- case input
- when "help"
-   
+  puts "Please enter a command:"
+  input = gets.strip
+  case input
+  when "help"
+    help
+    input = gets.strip
+  when ""
  else
 end
 
