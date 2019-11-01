@@ -37,7 +37,13 @@ def run(songs)
   when "help"
     help
     input = gets.strip
-  when ""
+  when "list"
+    list(songs)
+    input = gets.strip
+  when "play"
+    play(songs)
+    input = gets.input
+  
  else
 end
 
